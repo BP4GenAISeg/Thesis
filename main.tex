@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+
+\usepackage{setup/packages/core_packages}
+
+\begin{document}
+
+% ----------------------------
+% Title Page
+% ----------------------------
+\begin{titlepage}
+  \AddToShipoutPictureBG*{
+    \put(-4,650){
+      \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{setup/images/ku-top.pdf}
+    }
+  }
+  \AddToShipoutPictureBG*{
+    \AtPageLowerLeft{
+      \transparent{0.125}
+      \includegraphics[width=\paperwidth]{setup/images/ku-bottom.pdf}
+    }
+  }
+
+  \begin{center}
+      \vspace*{7cm}
+      {\Huge \textbf{Bachelor Project}} \\[0.8cm]
+      {\Large \textit{Multiscale Brain MRI Segmentation with Deep Generative Models}} \\[2cm]
+      {\Large \textbf{Authors:}} \\
+      Simon Winther \& Hjalte Bjoernstrup \\[1.5cm]
+      {\Large \textbf{University of Copenhagen}} \\[0.5cm]
+      {\Large Faculty of Science, Department of Computer Science} \\[1.5cm]
+  \end{center}
+  \vspace*{3.5cm}
+  {\textbf{\small Supervisor: Mostafa Mehdipour Ghazi}} \\
+  {\textbf{\small \today}}
+  \vfill
+\end{titlepage}
+
+% ----------------------------
+% Document Header/Footer Settings (Reapplied)
+% ----------------------------
+\pagestyle{fancy}
+\fancyhead[L]{Bachelor Project Contract}
+\fancyhead[R]{Simon \& Hjalte}
+
+% ----------------------------
+% Table of Contents
+% ----------------------------
+\tableofcontents
+\clearpage
+
+% ----------------------------
+% Main Document Sections
+% ----------------------------
+\input{sections/introduction}
+\input{sections/methodology}
+\input{sections/conclusion}
+
+% ----------------------------
+% Bibliography
+% ----------------------------
+\bibliographystyle{plain}
+\bibliography{bibliography/Literature}
+
+\end{document}
